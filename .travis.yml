@@ -4,7 +4,8 @@ service :
 
 before_install:
   - docker build -t docker-react -f Dockerfile.dev .
-
+  
+language: generic
 deploy : 
     provide : elasticbeanstalk
     region : "us-east-2"
